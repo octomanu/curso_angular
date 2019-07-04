@@ -1,0 +1,77 @@
+<form [formGroup]="form" (submit)="submitForm()">
+
+  <div class="row">
+
+    <div class="col form-group">
+      <label class="col-form-label">Razon Social</label>
+      <input class="form-control" formControlName="razon_social">
+    </div>
+
+    <div class="col form-group">
+      <label class="col-form-label">Nombre Fantasia</label>
+      <input class="form-control" formControlName="nombre_fantasia">
+    </div>
+
+    <div class="col form-group">
+      <label class="col-form-label">Direccion</label>
+      <input class="form-control" formControlName="direccion">
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col form-group">
+      <label class="col-form-label">Localidad</label>
+      <input class="form-control" formControlName="localidad">
+    </div>
+
+    <div class="col form-group">
+      <label class="col-form-label">Provincia</label>
+      <input class="form-control" formControlName="provincia">
+    </div>
+
+    <div class="col form-group">
+      <label class="col-form-label">Codigo Postal</label>
+      <input class="form-control" formControlName="codigo_postal">
+    </div>
+
+
+  </div>
+
+  <div class="row">
+    <div class="col form-group">
+      <label class="col-form-label">Cuit</label>
+      <input class="form-control" formControlName="cuit">
+    </div>
+
+    <div class="col form-group">
+      <label class="col-form-label">Nota</label>
+      <input class="form-control" formControlName="nota">
+    </div>
+    <div class="col form-group">
+      <label class="col-form-label">Matricula</label>
+      <input class="form-control" formControlName="matricula">
+    </div>
+
+
+  </div>
+
+  <div class="row">
+    <div class="col form-group">
+      <label class="col-form-label">Horario Atencion</label>
+      <input class="form-control" formControlName="horario_atencion">
+    </div>
+
+    <div class="col form-group">
+      <label class="col-form-label">Situacion Fiscal</label>
+      <input class="form-control" formControlName="situacion_fiscal">
+    </div>
+    <div class="col form-group"></div>
+  </div>
+
+  <div class="row text-right">
+    <div class="col">
+      <button class="btn btn-primary" [disabled]="form.invalid">Guardar</button>
+    </div>
+  </div>
+
+</form>
